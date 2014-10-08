@@ -29,6 +29,8 @@
                     </div>
                 </li>
             </ul>
+        </div>
+    <?endforeach ?>
             <form class="form-inline" method="post" role="form">
                 <div class="form-group">
                     <input class="form-control" type="text" placeholder="Your comments" name="data[comment_text]"/>
@@ -37,6 +39,5 @@
                     <button class="btn btn-default" type="submit">Add</button>
                 </div>
             </form>
-        </div>
-    <?endforeach ?>
+
 </div>
