@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Loomise aeg: Okt 08, 2014 kell 08:55 EL
+-- Loomise aeg: Okt 08, 2014 kell 09:19 EL
 -- Serveri versioon: 5.6.20
 -- PHP versioon: 5.5.15
 
@@ -28,7 +28,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
   `comment_text` text NOT NULL,
   `comment_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
   `post_id` int(10) unsigned NOT NULL
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=9 ;
 
 --
 -- Andmete tõmmistamine tabelile `comment`
@@ -37,10 +37,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
 INSERT INTO `comment` (`comment_id`, `comment_author`, `comment_text`, `comment_time`, `post_id`) VALUES
 (2, 'jaan', 'mina olen jaan, mulle ei meeldi sinu postitus', '2014-09-17 14:48:43', 1),
 (3, 'Viljar', 'asdfasd', '2014-10-08 06:23:36', 4),
-(4, 'Viljar', 'asdfasd', '2014-10-08 06:24:11', 4),
-(5, 'Viljar', 'sdfsdf', '2014-10-08 06:24:15', 4),
-(6, 'Viljar', 'proovin kommenteerida', '2014-10-08 06:43:26', 4),
-(7, 'Viljar', 'jou wasup', '2014-10-08 06:43:50', 1);
+(8, 'Jaanus', 'lamo kommentaar', '2014-10-08 06:23:36', 4);
 
 -- --------------------------------------------------------
 
@@ -168,7 +165,7 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT tabelile `comment`
 --
 ALTER TABLE `comment`
-MODIFY `comment_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=8;
+MODIFY `comment_id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=9;
 --
 -- AUTO_INCREMENT tabelile `post`
 --
