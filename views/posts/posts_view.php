@@ -1,3 +1,5 @@
+<?foreach ($tags[$post['post_id']] as $tag):?>
+    <a href="#"><span class="label" style="background-color: #5bc0de"><?=$tag?></span></a> <? endforeach?>
 <div class="span8">
     <h1><?= $post['post_subject'] ?></h1>
 
@@ -30,6 +32,8 @@
                 </li>
             </ul>
         </div>
+
+
     <?endforeach ?>
             <form class="form-inline" method="post" role="form">
                 <div class="form-group">
