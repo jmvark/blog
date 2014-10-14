@@ -8,9 +8,8 @@
         <hr>
     </div>
     <?foreach ($tags[$post['post_id']] as $tag):?>
-        <a href="#"><span class="label" style="background-color: #5bc0de"><?=$tag?></span></a> <? endforeach?>
+    <a href="tags/view/<?=$tag?>"><span class="label" style="background-color:#5bc0de"><?=$tag?></span></a><? endforeach?>
 <?endforeach?>
-
 <form method="post">
     <input type="text" placeholder="Pealkiri"><br><br>
     <textarea name="data[post_text]" id="" cols="30" rows="10" placeholder="Sisu"></textarea><br><br>
